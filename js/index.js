@@ -16,10 +16,10 @@ let login = () => {
 				email: email,
 				password : password
 			})
-		}).then(res => {
+		}).then(() => {
 			document.location.href = "userpage.html";
 			document.getElementById('loginform').reset();
-		})
+		});
 		
 	}
 }
