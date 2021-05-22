@@ -16,11 +16,11 @@ let login = () => {
 				email: email,
 				password : password
 			})
-		})
-		window.setTimeout(()=> {
+		}).then(res => {
 			document.location.href = "userpage.html";
 			document.getElementById('loginform').reset();
-		},1400);
+		})
+		
 	}
 }
 
