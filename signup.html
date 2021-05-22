@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Document</title>
+</head>
+<body>
+	 <div class="signup-form">
+		<form id="signupform" class="signup" onsubmit="return false;">
+			<div>
+				<label for="username">username</label>
+				<input type="text" name="username" id="username" reuired>
+			</div>
+			<div>
+				<label for="email">email</label>
+				<input type="email" name="email" id="email" required>
+			</div>
+			<div>
+				<label for="password">password</label>
+				<input class="passwordinput" type="password" name="password" id="password" required>
+			</div>
+			<div>
+				<label for="confirmpassword">confirm password</label>
+				<input class="passwordinput" type="password" name="confirmpassword" id="confirmpassword" reuired>
+			</div>
+			<div>
+				<label for="address">address</label>
+				<input type="text" name="address" id="address" required>
+			</div>
+			<div class="singup-btn">
+				<button onclick="signUp()">Sign Up</button>
+			</div>
+			<script type="text/javascript" src="js/signup.js"></script>
+			
+		</form>
+	</div>	
+	
+</body>
+</html>
