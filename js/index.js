@@ -17,14 +17,15 @@ let login = () => {
 				password : password
 			})
 		})
-		loginRedirect();
+		window.setTimeout(()=> {
+			document.location.href = "userpage.html";
+			document.getElementById('loginform').reset();
+		},1400);
 	}
-	// document.getElementById('loginform').reset();
 }
 
-let loginRedirect = () => {
-	window.setTimeout(() => {}, 500);
-	document.location.href = "userpage.html";
-}
+// let loginRedirect = () => {
+// 	document.location.href = "userpage.html";
+// }
 
 let signUpButton = () => document.location.href = "signup.html"
